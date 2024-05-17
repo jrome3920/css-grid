@@ -11,7 +11,38 @@
 }
 
 .grid-container{
-    height: 500px;
+    height: 360px;
     width: 500px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 4px;
+}
+
+.grid-item{
     border: 1px solid #000;
+    border-radius: 8px;
+    transition: .2s ease;
+    background-color: #fff;
+}
+
+.grid-item:hover{
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+.grid-item-1{
+    grid-row: span 3;
+}
+
+.grid-item-2{
+    grid-column: span 2;
+}
+
+.grid-item-6{
+    grid-row: span 2;
+}
+
+.grid-item-10{
+    grid-column: span 3;
 }
